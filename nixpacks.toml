@@ -1,0 +1,5 @@
+[phases.setup]
+nixPkgs = ["...", "openssl", "openssl.dev"]
+
+[phases.build]
+cmds = ["cargo prisma generate", "..."]
